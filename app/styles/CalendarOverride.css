@@ -1,0 +1,160 @@
+
+.react-calendar {
+    border: none;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1); /* shadow-xl */
+    font-family: 'Inter', sans-serif;
+    width: 380px; /* responsive */
+    padding: 16px;
+    background: #fff;
+    font-family: "Airbnb Cereal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+}
+
+.react-calendar__tile {
+  height: 50px !important;
+  padding: 16px 0 !important;
+  font-size: 14px !important;
+}
+
+/* Tambah jarak antar baris tanggal */
+.react-calendar__month-view__days {
+  row-gap: 6px;
+}
+
+
+.react-calendar__tile--active {
+    background-color: #0e43b7; /* Tailwind blue-600 */
+    color: white;
+    border-radius: 0.25rem;
+}
+
+
+
+/* Semua kotak tanggal */
+.react-calendar__tile.react-calendar__month-view__days__day {
+    border-radius: 50px; /* Tailwind rounded */
+    transition: background 0.2s;
+    font-weight: 600;
+    color: #15181d; /* Tailwind gray-700 */
+}
+
+/* Hover setiap tanggal */
+.react-calendar__tile.react-calendar__month-view__days__day:hover {
+    background-color: #000000; /* Tailwind blue-200 */
+    color: #ffffff; /* Tailwind blue-800 */
+    border-radius: 50px;
+}
+
+/* Tanggal aktif */
+.react-calendar__tile--active {
+    background-color: #000000; /* Tailwind blue-600 */
+    color: white !important;
+    /* border-radius: 0.25rem; */
+    border-radius: 50px !important;
+}
+
+/* Tanggal selain bulan aktif bisa lebih redup */
+.react-calendar__tile.react-calendar__month-view__days__day:disabled {
+    color: #9ca3af; /* Tailwind gray-400 */
+}
+
+/* Semua weekday */
+.react-calendar__month-view__weekdays__weekday {
+    color: rgb(148, 148, 149);
+    font-size: 14px;
+    margin-bottom: 10px;
+    /* text-transform: ucfirst; Optional, jadi MO, TU, etc */
+}
+
+/* Ambil hanya 2 huruf pertama */
+.react-calendar__month-view__weekdays__weekday abbr {
+    display: inline-block;
+    width: 2ch; /* hanya tampilkan 2 huruf */
+    text-decoration: none; /* hilangkan underline default <abbr> */
+}
+
+.react-calendar__navigation__label{
+    color: rgb(11, 11, 22);
+    font-weight: 600;
+    font-size: large;
+}
+
+
+
+/* Tanggal sudah lewat / disabled */
+.react-calendar__tile:disabled {
+  background-color: #ffffff; /* soft blue */
+  color: #000000; /* Tailwind gray-400 */
+  cursor: not-allowed;
+}
+
+/* Hover tetap tidak berubah */
+.react-calendar__tile:disabled:hover {
+  background-color: #e0f2fe;
+}
+
+.react-calendar__month-view__weekdays__weekday,
+.react-calendar__month-view__weekdays__weekday abbr {
+    text-transform: none !important;
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button{
+    color: rgb(65, 65, 66);
+    font-weight: 700;
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__next2-button{
+    color: rgb(65, 65, 66);
+    font-weight: 700;
+}
+
+.react-calendar__tile.react-calendar__year-view__months__month{
+    color: rgb(65, 65, 66);
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__next-button{
+    color: rgb(65, 65, 66);
+    font-weight: 700;
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__prev-button{
+    color: rgb(65, 65, 66);
+    font-weight: 700;
+}
+
+/* Mobile Calender */
+
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 480px) {
+
+  /* Lebarkan agar penuh layar */
+  .react-calendar {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+
+  /* Perkecil tile sedikit agar muat */
+  .react-calendar__tile {
+    height: 42px !important;
+    padding: 10px 0 !important;
+    font-size: 12px !important;
+  }
+
+  /* Rapikan WEEKDAYS */
+  .react-calendar__month-view__weekdays__weekday abbr {
+    font-size: 11px !important;
+  }
+
+  /* Rapikan jarak antar grid */
+  .react-calendar__month-view__days {
+    row-gap: 6px;
+  }
+
+}
+
+

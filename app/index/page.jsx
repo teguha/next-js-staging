@@ -1,17 +1,81 @@
 "use client"
-import { useRouter } from 'next/navigation';
+
 import { useState } from "react"
 import Head from 'next/head';
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import FilterMain from "./components/FilterMain";
-import PackageCard from "./components/PackageCard";
-import Footer from "./components/Footer";
-import { formatDate } from "date-fns";
-import Link from 'next/link';
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import FilterMain from "../components/FilterMain";
+import PackageCard from "../components/PackageCard";
+import Footer from "../components/Footer";
 
 export default function Home() {
+    const websiteSchema = {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https://yourwebsite.com",
+        "name": "Bali Water Sports",
+        "description": "Explore the best water sports in Bali.",
+        "publisher": {
+        "@type": "Organization",
+        "name": "Bali Water Sports",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://yourwebsite.com/logo.png"
+        }
+        }
+    };
 
+    const watersportSchema = {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": "Bali Jet Ski Adventu  re",
+        "description": "Experience the thrill of jet skiing in Bali with our professional instructors.",
+        "image": "https://yourwebsite.com/images/jet-ski.jpg",
+        "url": "https://yourwebsite.com/activities/jet-ski-adventure",
+        "brand": {
+        "@type": "Brand",
+        "name": "Bali Water Sports"
+        },
+        "offers": {
+        "@type": "Offer",
+        "url": "https://yourwebsite.com/activities/jet-ski-adventure",
+        "priceCurrency": "IDR",
+        "price": "1000000",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "http://schema.org/NewCondition",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "Bali Water Sports"
+        }
+        }
+    };
+
+    const atvSchema = {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": "Bali ATV Adventure",
+        "description": "Experience the best ATV riding in Bali with our all-terrain vehicles.",
+        "image": "https://yourwebsite.com/images/atv-adventure.jpg",
+        "url": "https://yourwebsite.com/activities/atv-adventure",
+        "brand": {
+            "@type": "Brand",
+            "name": "Bali Water Sports"
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://yourwebsite.com/activities/atv-adventure",
+            "priceCurrency": "IDR",
+            "price": "600000",
+            "priceValidUntil": "2025-12-31",
+            "itemCondition": "http://schema.org/NewCondition",
+            "availability": "http://schema.org/InStock",
+            "seller": {
+            "@type": "Organization",
+            "name": "Bali Water Sports"
+            }
+        }
+    };
 
     const Category = [
         {
@@ -268,153 +332,30 @@ export default function Home() {
     const sortedByCategory = sortedPackage.sort((a,b) => (a.id === 3 ? 1 : b.id === 3 ? -1 : 0))
     // 1 artimya dibawa kebelakang , dan -1 artinya dibawa kedepan 
 
-    const router = useRouter(); // penting! harus ada ini
-    function handleSearch(catId) {
-      // console.log('ini', catId)
-      router.push(`/search?date=${formatDate(new Date(), 'dd-MM-yyyy')}&promo=&category=${catId}`);
-    }
-
-
-    // SCHEMA ORG
-    // ORGANIZATION SCHEMA
-    const websiteOrgShema = [
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Bali Water Sports",
-        "url": "https://yourwebsite.com",
-        "logo": "https://yourwebsite.com/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/yourbrand",
-          "https://www.facebook.com/yourbrand",
-          "https://www.youtube.com/yourbrand"
-        ]
-      }
-    ];
-
-    const websiteSchema = [
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Bali Water Sports",
-        "url": "https://yourwebsite.com",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://yourwebsite.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    ];
-
-    const webPageSchema =[
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Home - Bali Water Sports",
-        "url": "https://yourwebsite.com",
-        "description": "Explore watersports, snorkeling, water rafting, paras ATV rides, Bali attractions and online ticket booking.",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://yourwebsite.com/#website"
-        },
-        "about": {
-          "@type": "Organization",
-          "@id": "https://yourwebsite.com/#organization"
-        }
-      }
-    ];
-
-    const itemListSchema = [
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Popular Activities",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "url": "https://yourwebsite.com/activities/jet-ski-adventure"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "url": "https://yourwebsite.com/activities/atv-adventure"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "url": "https://yourwebsite.com/activities/water-rafting"
-          }
-        ]
-      }
-    ];
-
-    const productServiceSchema = [
-      {
-        "@context": "https://schema.org",
-        "@type": ["Product", "Service"],
-        "name": "Bali Jet Ski Adventure",
-        "description": "Experience an exciting jet ski ride at Tanjung Benoa with certified instructors.",
-        "image": "https://yourwebsite.com/images/jet-ski.jpg",
-        "url": "https://yourwebsite.com/activities/jet-ski-adventure",
-        "brand": {
-          "@type": "Organization",
-          "name": "Bali Water Sports"
-        },
-        "offers": {
-          "@type": "Offer",
-          "name": "Starting Price",
-          "priceCurrency": "IDR",
-          "price": "250000",
-          "priceValidUntil": "2025-12-31",
-          "availability": "https://schema.org/InStock",
-          "url": "https://yourwebsite.com/activities/jet-ski-adventure",
-          "seller": {
-            "@type": "Organization",
-            "name": "Bali Water Sports"
-          }
-        }
-      }
-    ];
-    // SCHEMA ORG
-
-
-
     return(
     <>
         <Head>
             {/* Meta Tags untuk halaman ini */}
-            <title>Bali Water Sports & Activities | Jet Ski, Snorkeling, Water Rafting</title>
-            <meta 
-              name="description" 
-              content="Book Bali water sports, Snorkeling, ATV rides, parasailing, rafting, and attraction tickets with instant confirmation." 
-            />
-
-            {/* Canonical */}
-            <link rel="canonical" href="https://yourwebsite.com" />
-
-            {/* OG */}
-            <meta property="og:title" content="Bali Water Sports & Activities | Jet Ski, ATV, Tickets" />
-            <meta property="og:description" content="Discover watersports, ATV, rafting and Bali attraction tickets with instant booking." />
-            <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" />
+            <title>Home Page - Bali Water Sports</title>
+            <meta name="description" content="Explore the best water sports in Bali." />
+            <meta property="og:title" content="Home Page - Bali Water Sports" />
+            <meta property="og:description" content="Enjoy thrilling water activities in Bali." />
+            <meta property="og:image" content="https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg" />
             <meta property="og:url" content="https://yourwebsite.com" />
-            <meta property="og:type" content="website" />
-            <meta name="twitter:card" content="summary_large_image" />
             
-            <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteOrgShema) }}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
             />
-            <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+
+            {/* Menambahkan semua schema untuk produk/aktivitas */}
+            <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(watersportSchema) }}
             />
-            <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-            />
-            <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
-            />
-            <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(productServiceSchema) }}
+            <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(atvSchema) }}
             />
         </Head>
 
@@ -459,7 +400,6 @@ export default function Home() {
                                                 oldPrice={cheapRates.old_price}
                                                 newPrice={cheapRates.price}
                                                 discount={cheapRates.disc}
-                                                handleSearch={handleSearch}
                                                 // link="#details"
                                             />
                                         )
@@ -468,9 +408,9 @@ export default function Home() {
                             </div>
 
                             <div className="text-center mt-12">
-                                <button  onClick={() => handleSearch(cat.id ?? 1)} className="inline-block bg-white text-gray-800 font-semibold px-8 py-4 rounded-lg border-2 border-blue-600 hover:bg-blue-700 hover:text-white hover:border-blue-400 hover:shadow-lg hover:scale-[0.98] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 shadow-sm hover:shadow-md">
+                                <a href="#all-packages" className="inline-block bg-white text-gray-800 font-semibold px-8 py-4 rounded-lg border-2 border-blue-600 hover:bg-blue-700 hover:text-white hover:border-blue-400 hover:shadow-lg hover:scale-[0.98] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 shadow-sm hover:shadow-md">
                                 Show All {cat.name}
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </section>
