@@ -31,7 +31,6 @@ export default function SearchClient(){
         }
     ];
     
-
     const DataPackage = [
         {
             'id'    : 1,
