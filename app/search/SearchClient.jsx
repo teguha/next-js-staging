@@ -30,6 +30,7 @@ export default function SearchClient(){
             'name': 'Other Activities'
         }
     ];
+    
 
     const DataPackage = [
         {
