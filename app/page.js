@@ -33,9 +33,9 @@ export default function Home() {
             'id'    : 1,
             'name'  : 'Bali Watersport - Parasailing + Jet Ski + Banana Boat',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '04-12-2025',
+            'date'  : '06-12-2025',
             'category_type' : 1,
-            'promo_code'    : 'HSJHSJKHDS',
+            'promo_code'    : 'Buy1Get1Free',
             'image' : [
                 {
                     'id'    : 1,
@@ -61,7 +61,6 @@ export default function Home() {
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    "date"  : "09-11-2025",
                     "qty"   : 5
                 },
                 {
@@ -71,7 +70,6 @@ export default function Home() {
                     "price" : 2400000,
                     "disc"  : 50,
                     'unit'  : "Pax",
-                    "date"  : "09-11-2025",
                     "qty"   : 5
                 }
             ]
@@ -80,13 +78,13 @@ export default function Home() {
             'id'    : 2,
             'name'  : 'Bali Watersport + Quad Bike',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '04-12-2025',
+            'date'  : '07-12-2025',
             'category_type' : 1,
-            'promo_code'    : 'HSJHHSAJHA',
+            'promo_code'    : 'WaterSport25',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://www.baliskytour.com/images/WatersportsSpaPackages1.jpg",
                     'name'  : "image 1"
                 },
                 {
@@ -108,7 +106,6 @@ export default function Home() {
                     "price" : 1200000,
                     "disc"  : 40,
                     "unit"  : "Pax",
-                    "date"  : '01-12-2025',
                     "qty"   : 5
                 },
             ]
@@ -117,23 +114,23 @@ export default function Home() {
             'id'    : 3,
             'name'  : 'Snorkeling Blue Lagoon + Monkey Bar + Waterfall',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '03-12-2025',
+            'date'  : '08-12-2025',
             'category_type' : 2,
-            'promo_code'    : 'HSJSAI22',
+            'promo_code'    : 'BlueLagoonSnorkeling',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://www.travelersuniverse.com/wp-content/uploads/2025/06/1_bali-snorkeling-on-2-spots-with-lunch-and-transport-800x400.jpg",
                     'name'  : "image 1"
                 },
                 {
                     'id'    : 2,
-                    'img'   : "https://visitbalitour.com/wp-content/uploads/2015/09/bali-jet-ski-bali-tour-2602415296-1666395775840.jpg",
+                    'img'   : "https://d18sx48tl6nre5.cloudfront.net/lg_622b14bff92932f85926c9b677db3e81.jpg",
                     'name'  : "image 2"
                 },
                 {
                     'id'    : 3,
-                    'img'   : "https://fundaynusadua.com/wp-content/uploads/2024/08/fdnd-ultimate2.jpg",
+                    'img'   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwblT7-o8AlASATWdxNe6Y46moqwjFnbDwg&s",
                     'name'  : "image 3"
                 }
             ],
@@ -145,7 +142,6 @@ export default function Home() {
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 },
                 {
@@ -155,7 +151,6 @@ export default function Home() {
                     "price" : 2400000,
                     "disc"  : 50,
                     'unit'  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 }
             ]
@@ -164,23 +159,23 @@ export default function Home() {
             'id'    : 4,
             'name'  : 'Bali ATV Package',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '05-12-2025',
+            'date'  : '06-12-2025',
             'category_type' : 3,
-            'promo_code'    : 'HSJHJSJ888',
+            'promo_code'    : 'AtvGo25',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://d3uyff779abz3k.cloudfront.net/-bali-tayatha-com-/image/Everything-about-Accidents-in-Bali-ATV-Tour.jpg",
                     'name'  : "image 1"
                 },
                 {
                     'id'    : 2,
-                    'img'   : "https://visitbalitour.com/wp-content/uploads/2015/09/bali-jet-ski-bali-tour-2602415296-1666395775840.jpg",
+                    'img'   : "https://q-xx.bstatic.com/xdata/images/xphoto/800x800/478124266.jpg?k=1a9ef2e74a8cb4caacc374dedebac45ac69414554fb0762d5ca230dc276ddcde&o=",
                     'name'  : "image 2"
                 },
                 {
                     'id'    : 3,
-                    'img'   : "https://fundaynusadua.com/wp-content/uploads/2024/08/fdnd-ultimate2.jpg",
+                    'img'   : "https://www.baliquadbiking.com/wp-content/uploads/2023/03/4-Best-ATV-in-Bali-with-Unique-Track.jpg",
                     'name'  : "image 3"
                 }
             ],
@@ -192,7 +187,6 @@ export default function Home() {
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    'date'  : '01-12-2025',
                     "qty"   : 5
                 },
                 {
@@ -202,7 +196,6 @@ export default function Home() {
                     "price" : 2400000,
                     "disc"  : 50,
                     'unit'  : "Pax",
-                    'date'  : '01-12-2025',
                     "qty"   : 5
                 }
             ]
@@ -211,23 +204,23 @@ export default function Home() {
             'id'    : 5,
             'name'  : 'Ayung Rafting',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '02-12-2025',
+            'date'  : '07-12-2025',
             'category_type' : 3,
-            'promo_code'    : 'HSJ9292JSS',
+            'promo_code'    : 'Rafting25',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://www.raftingbali.net/wp-content/uploads/2023/10/River-Rafting-in-Bali-FAQ.jpg",
                     'name'  : "image 1"
                 },
                 {
                     'id'    : 2,
-                    'img'   : "https://visitbalitour.com/wp-content/uploads/2015/09/bali-jet-ski-bali-tour-2602415296-1666395775840.jpg",
+                    'img'   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9Ov3IF58tjmreou1Vtb6lCe5iLb5VTgdAQ&shttps://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2023/07/05/bfdf8c7d-59ad-4759-85b0-e9808067cd54-1688523953290-a9a065b7d464176adf01e5e7d3e10c6e.jpg",
                     'name'  : "image 2"
                 },
                 {
                     'id'    : 3,
-                    'img'   : "https://fundaynusadua.com/wp-content/uploads/2024/08/fdnd-ultimate2.jpg",
+                    'img'   : "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e6/80/e9.jpg",
                     'name'  : "image 3"
                 }
             ],
@@ -239,7 +232,6 @@ export default function Home() {
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 },
                 {
@@ -249,7 +241,6 @@ export default function Home() {
                     "price" : 500000,
                     "disc"  : 80,
                     'unit'  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 }
             ]
@@ -385,9 +376,7 @@ export default function Home() {
         <Head>
             {/* Meta Tags untuk halaman ini */}
             <title>Bali Water Sports & Activities | Jet Ski, Snorkeling, Water Rafting</title>
-            <meta 
-              name="description" 
-              content="Book Bali water sports, Snorkeling, ATV rides, parasailing, rafting, and attraction tickets with instant confirmation." 
+            <meta name="description" content="Book Bali water sports, Snorkeling, ATV rides, parasailing, rafting, and attraction tickets with instant confirmation." 
             />
 
             {/* Canonical */}
@@ -402,19 +391,19 @@ export default function Home() {
             <meta name="twitter:card" content="summary_large_image" />
             
             <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteOrgShema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteOrgShema) }}
             />
             <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
             />
             <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
             />
             <script type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(productServiceSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productServiceSchema) }}
             />
         </Head>
 
@@ -423,23 +412,23 @@ export default function Home() {
                 <Header />
             </div>
             <HeroSection />
-            <section className="relative z-20 -mt-12">
+            <section className="relative z-20 -mt-15 md:-mt-12">
                 <FilterMain />
             </section>
 
             {/* watersport bali package */}
             {
                 sortedByCategory.map((cat, index) => (
-                    <section className={`py-42 md:py-20 lg:py-20 ${
+                    <section className={`${index === 0 ? "pt-42 pb-20 -mt-30" : "py-20 -mt-10"}  md:py-20 lg:py-20 ${
                             index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                        } -mt-20 md:-mt-12 lg:-mt-12`}>
+                        }  md:-mt-12 lg:-mt-12`}>
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                            <header className="mb-10">
+                            <header className={`${index === 0 ? "mb-10" : "mb-2 md:mb-10"}`}>
                                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{cat.name}</h2>
                                 <p className="text-gray-600">Experience Bali's nature through land and water thrills as well</p>
                             </header>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div className="flex overflow-x-auto gap-4 px-2 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">
                                 {
                                     cat.items.map(item =>{
 
@@ -450,26 +439,31 @@ export default function Home() {
                                         )
             
                                         return (
-                                            <PackageCard 
-                                                image={item.image[0].img}
-                                                data = {item}
-                                                rateData ={cheapRates}
+                                            <div
                                                 key={item.id}
-                                                title={item.name}
-                                                oldPrice={cheapRates.old_price}
-                                                newPrice={cheapRates.price}
-                                                discount={cheapRates.disc}
-                                                handleSearch={handleSearch}
-                                                // link="#details"
-                                            />
+                                                className="min-w-[92%] sm:min-w-[60%] md:min-w-0"  // <-- penting untuk 1.5 card
+                                            >
+                                                <PackageCard 
+                                                    image={item.image[0].img}
+                                                    data = {item}
+                                                    rateData ={cheapRates}
+                                                    key={item.id}
+                                                    title={item.name}
+                                                    oldPrice={cheapRates.old_price}
+                                                    newPrice={cheapRates.price}
+                                                    discount={cheapRates.disc}
+                                                    handleSearch={handleSearch}
+                                                    // link="#details"
+                                                />
+                                            </div>
                                         )
                                     })
                                 }
                             </div>
 
-                            <div className="text-center mt-12">
+                            <div className="text-center mt-12 mb-12">
                                 <button  onClick={() => handleSearch(cat.id ?? 1)} className="inline-block bg-white text-gray-800 font-semibold px-8 py-4 rounded-lg border-2 border-blue-600 hover:bg-blue-700 hover:text-white hover:border-blue-400 hover:shadow-lg hover:scale-[0.98] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 shadow-sm hover:shadow-md">
-                                Show All {cat.name}
+                                Show All Packages
                                 </button>
                             </div>
                         </div>

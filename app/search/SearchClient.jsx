@@ -36,9 +36,9 @@ export default function SearchClient(){
             'id'    : 1,
             'name'  : 'Bali Watersport - Parasailing + Jet Ski + Banana Boat',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '04-12-2025',
+            'date'  : '06-12-2025',
             'category_type' : 1,
-            'promo_code'    : 'HSJHSJKHDS',
+            'promo_code'    : 'Buy1Get1Free',
             'image' : [
                 {
                     'id'    : 1,
@@ -64,7 +64,6 @@ export default function SearchClient(){
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    "date"  : "09-11-2025",
                     "qty"   : 5
                 },
                 {
@@ -74,7 +73,6 @@ export default function SearchClient(){
                     "price" : 2400000,
                     "disc"  : 50,
                     'unit'  : "Pax",
-                    "date"  : "09-11-2025",
                     "qty"   : 5
                 }
             ]
@@ -83,13 +81,13 @@ export default function SearchClient(){
             'id'    : 2,
             'name'  : 'Bali Watersport + Quad Bike',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '04-12-2025',
+            'date'  : '07-12-2025',
             'category_type' : 1,
-            'promo_code'    : 'hjhjhjhjy',
+            'promo_code'    : 'WaterSport25',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://www.baliskytour.com/images/WatersportsSpaPackages1.jpg",
                     'name'  : "image 1"
                 },
                 {
@@ -111,7 +109,6 @@ export default function SearchClient(){
                     "price" : 1200000,
                     "disc"  : 40,
                     "unit"  : "Pax",
-                    "date"  : '01-12-2025',
                     "qty"   : 5
                 },
             ]
@@ -120,23 +117,23 @@ export default function SearchClient(){
             'id'    : 3,
             'name'  : 'Snorkeling Blue Lagoon + Monkey Bar + Waterfall',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '03-12-2025',
+            'date'  : '08-12-2025',
             'category_type' : 2,
-            'promo_code'    : 'HSJSAI22',
+            'promo_code'    : 'BlueLagoonSnorkeling',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://www.travelersuniverse.com/wp-content/uploads/2025/06/1_bali-snorkeling-on-2-spots-with-lunch-and-transport-800x400.jpg",
                     'name'  : "image 1"
                 },
                 {
                     'id'    : 2,
-                    'img'   : "https://visitbalitour.com/wp-content/uploads/2015/09/bali-jet-ski-bali-tour-2602415296-1666395775840.jpg",
+                    'img'   : "https://d18sx48tl6nre5.cloudfront.net/lg_622b14bff92932f85926c9b677db3e81.jpg",
                     'name'  : "image 2"
                 },
                 {
                     'id'    : 3,
-                    'img'   : "https://fundaynusadua.com/wp-content/uploads/2024/08/fdnd-ultimate2.jpg",
+                    'img'   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwblT7-o8AlASATWdxNe6Y46moqwjFnbDwg&s",
                     'name'  : "image 3"
                 }
             ],
@@ -148,7 +145,6 @@ export default function SearchClient(){
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 },
                 {
@@ -158,7 +154,6 @@ export default function SearchClient(){
                     "price" : 2400000,
                     "disc"  : 50,
                     'unit'  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 }
             ]
@@ -167,23 +162,23 @@ export default function SearchClient(){
             'id'    : 4,
             'name'  : 'Bali ATV Package',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '05-12-2025',
+            'date'  : '06-12-2025',
             'category_type' : 3,
-            'promo_code'    : 'HSJHJSJ888',
+            'promo_code'    : 'AtvGo25',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://d3uyff779abz3k.cloudfront.net/-bali-tayatha-com-/image/Everything-about-Accidents-in-Bali-ATV-Tour.jpg",
                     'name'  : "image 1"
                 },
                 {
                     'id'    : 2,
-                    'img'   : "https://visitbalitour.com/wp-content/uploads/2015/09/bali-jet-ski-bali-tour-2602415296-1666395775840.jpg",
+                    'img'   : "https://q-xx.bstatic.com/xdata/images/xphoto/800x800/478124266.jpg?k=1a9ef2e74a8cb4caacc374dedebac45ac69414554fb0762d5ca230dc276ddcde&o=",
                     'name'  : "image 2"
                 },
                 {
                     'id'    : 3,
-                    'img'   : "https://fundaynusadua.com/wp-content/uploads/2024/08/fdnd-ultimate2.jpg",
+                    'img'   : "https://www.baliquadbiking.com/wp-content/uploads/2023/03/4-Best-ATV-in-Bali-with-Unique-Track.jpg",
                     'name'  : "image 3"
                 }
             ],
@@ -195,7 +190,6 @@ export default function SearchClient(){
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    'date'  : '01-12-2025',
                     "qty"   : 5
                 },
                 {
@@ -205,7 +199,6 @@ export default function SearchClient(){
                     "price" : 2400000,
                     "disc"  : 50,
                     'unit'  : "Pax",
-                    'date'  : '01-12-2025',
                     "qty"   : 5
                 }
             ]
@@ -214,23 +207,23 @@ export default function SearchClient(){
             'id'    : 5,
             'name'  : 'Ayung Rafting',
             'desc'  : 'Welcome to an all-inclusive Bali adventure, combining the excitment of watersport, the beauty of Padang Padang Beach and the splendor of Uluwatu Temple',
-            'date'  : '06-12-2025',
+            'date'  : '07-12-2025',
             'category_type' : 3,
-            'promo_code'    : 'HSJ9292JSS',
+            'promo_code'    : 'Rafting25',
             'image' : [
                 {
                     'id'    : 1,
-                    'img'   : "https://www.befreetour.com/img/produk/bali-water-sports/bali-water-sports_6243f29e76ca02b9d0e373022c13ce96f2ed06bc.jpg",
+                    'img'   : "https://www.raftingbali.net/wp-content/uploads/2023/10/River-Rafting-in-Bali-FAQ.jpg",
                     'name'  : "image 1"
                 },
                 {
                     'id'    : 2,
-                    'img'   : "https://visitbalitour.com/wp-content/uploads/2015/09/bali-jet-ski-bali-tour-2602415296-1666395775840.jpg",
+                    'img'   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9Ov3IF58tjmreou1Vtb6lCe5iLb5VTgdAQ&shttps://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2023/07/05/bfdf8c7d-59ad-4759-85b0-e9808067cd54-1688523953290-a9a065b7d464176adf01e5e7d3e10c6e.jpg",
                     'name'  : "image 2"
                 },
                 {
                     'id'    : 3,
-                    'img'   : "https://fundaynusadua.com/wp-content/uploads/2024/08/fdnd-ultimate2.jpg",
+                    'img'   : "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e6/80/e9.jpg",
                     'name'  : "image 3"
                 }
             ],
@@ -242,17 +235,15 @@ export default function SearchClient(){
                     "price" : 1200000,
                     "disc"  : 50,
                     "unit"  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 },
                 {
                     "id"    : 2,
                     "name"  : "Premium Rate",
                     "old_price" : 2400000,
-                    "price" : 2400000,
-                    "disc"  : 0,
+                    "price" : 500000,
+                    "disc"  : 80,
                     'unit'  : "Pax",
-                    'date'  : '30-11-2025',
                     "qty"   : 5
                 }
             ]
@@ -275,7 +266,7 @@ export default function SearchClient(){
     const [showCartPanel, setShowCartPanel] = useState(false);
     const [paymentPage , setPaymentPage] = useState(false);
     const handleGoToPayment = () => {
-        setPaymentPage(true);
+        paymentPage == true ? handleSubmitFormUser() : setPaymentPage(true);
     };
 
     useEffect(() => {
@@ -397,6 +388,30 @@ export default function SearchClient(){
     // perhitungan handle qty
 
 
+    // form user
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        note: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+        ...prev,
+        [name]: value
+        }));
+    };
+
+    const handleSubmitFormUser = () => {
+        console.log('Form submitted:', formData);
+        alert('Form berhasil disubmit! Check console untuk data.');
+    };
+    // form user
+
+
 
     return(
         <>
@@ -412,13 +427,28 @@ export default function SearchClient(){
             ) : (
                 <div className="hidden md:block">
                     <Header />
+                    
                 </div>
             )
         }
 
         <section className="relative bg-gray-50 mb-18 md:mb-0">
             <div className ="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-50 py-4 container mx-auto">
-                
+                {
+                        paymentPage && (
+                            <section className="fixed top-0 w-full z-10 md:relative z-20 border-b border-gray-200 bg-white py-4 shadow-2xl sm:border-none sm:bg-transparent sm:py-0 sm:shadow-none block md:hidden">
+                                <div className="block md:hidden flex flex-row justify-between mx-auto px-4 mb-2">
+                                    <div className="flex flex-row justify-start">
+                                        <FaChevronLeft className="text-gray-900 text-xl mt-1 mr-2" />
+                                        <p className="text-gray-900 font-bold text-xl">Watersport Bali</p>
+                                    </div>
+                                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300 text-white">
+                                        <FaShoppingBag className="w-4 h-4" onClick={() => setShowCartPanel(prev => !prev)} />
+                                    </div>
+                                </div>
+                            </section>
+                        )
+                    }
                 {
                     !paymentPage ? (
                         <>
@@ -546,18 +576,119 @@ export default function SearchClient(){
                     ) : 
                     (
                         <>
-                        <div className="col-span-1 md:col-span-2 lg:col-span-2 ">
-                            <p className='text-gray-600 font-normal text-lg'>
-                                Booking Section
-                            </p>
-                        </div>
+                            <div className="col-span-1 md:col-span-2 lg:col-span-2 mb-10 mt-10">
+                                <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl p-8">
+                                    <div className="mb-8">
+                                    <h2 className="text-3xl font-bold text-slate-800 mb-2">Guest Information</h2>
+                                    <p className="text-slate-500">Please fill in your details below</p>
+                                    </div>
+
+                                    <div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                        {/* First Name */}
+                                        <div>
+                                        <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
+                                            First Name <span className='text-red-500 text-lg'>*</span>
+                                        </label>
+                                        <input
+                                            type="text"
+                                            id="firstName"
+                                            name="firstName"
+                                            value={formData.firstName}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-700"
+                                            placeholder=""
+                                            required
+                                        />
+                                        </div>
+
+                                        {/* Last Name */}
+                                        <div>
+                                        <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-2">
+                                            Last Name <span className='text-red-500 text-lg'>*</span>
+                                        </label>
+                                        <input
+                                            type="text"
+                                            id="lastName"
+                                            name="lastName"
+                                            value={formData.lastName}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-700"
+                                            placeholder=""
+                                            required
+                                        />
+                                        </div>
+
+                                        {/* Email */}
+                                        <div>
+                                        <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                                            Email <span className='text-red-500 text-lg'>*</span>
+                                        </label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-700"
+                                            placeholder=""
+                                            required
+                                        />
+                                        </div>
+
+                                        {/* Phone Number */}
+                                        <div>
+                                        <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
+                                            Phone Number <span className='text-red-500 text-lg'>*</span>
+                                        </label>
+                                        <input
+                                            type="tel"
+                                            id="phone"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-700"
+                                            placeholder=""
+                                            required
+                                        />
+                                        </div>
+
+                                        {/* Note - Full Width */}
+                                        <div className="col-span-1 md:col-span-2">
+                                        <label htmlFor="note" className="block text-sm font-medium text-slate-700 mb-2">
+                                            Note | Special request arrangement
+                                        </label>
+                                        <textarea
+                                            id="note"
+                                            name="note"
+                                            value={formData.note}
+                                            onChange={handleChange}
+                                            rows="4"
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none resize-none text-gray-700"
+                                            placeholder=""
+                                        />
+                                        </div>
+                                    </div>
+
+                                        {/* Submit Button */}
+                                        <div className="flex justify-end block md:hidden">
+                                            <button
+                                            onClick={handleSubmitFormUser}
+                                            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                                            >
+                                            Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </>
                     )
                 }
                 
 
                 {/* cart */}
-                <FilterCart  cart={cart} handleDeleteCart={handleDeleteCart} handleMinus={handleMinus}  handlePlus={handlePlus} showCartPanel={showCartPanel} setShowCartPanel={setShowCartPanel} handleCheckOut ={handleGoToPayment} paymentPage ={paymentPage} />
+                <FilterCart  cart={cart} handleDeleteCart={handleDeleteCart} handleMinus={handleMinus}  handlePlus={handlePlus} showCartPanel={showCartPanel} setShowCartPanel={setShowCartPanel} handleCheckOut ={handleGoToPayment} paymentPage ={paymentPage}  />
                 {/* cart */}
             
             </div>

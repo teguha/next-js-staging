@@ -122,11 +122,11 @@ export default function FilterPackage({data, cart, dateStr , handlePlus, handleM
                     {data.rates.map((item) =>(
                         <div key={`${data.id}-${item.id}-${data.date}`} className="border-2 border-gray-200 hover:border-blue-300 hover:bg-gradient-to-br from-blue-50 to-white px-4 py-4 bg-white shadow-md rounded-xl mb-4 ">
                             <div className="flex flex-row justify-between mb-2">
-                                <p className="text-lg text-gray-900 font-bold">{item.name}</p>
+                                <p className="text-md md:text-lg text-gray-900 font-bold mt-1">{item.name}</p>
                                 <div className="flex flex-row items-center">
-                                    <FaInfoCircle className="text-blue-600 text-sm "/>
+                                    <FaInfoCircle className="text-blue-600 text-sm md:text-md"/>
                                     <button
-                                        className="text-sm font-semibold text-blue-600 
+                                        className="text-sm md:text-sm font-semibold text-blue-600 
                                         leading-normal
                                         border-none
                                         hover:text-blue-700 hover:underline focus:outline-none focus:ring-0  px-2 py-1"
@@ -153,17 +153,17 @@ export default function FilterPackage({data, cart, dateStr , handlePlus, handleM
                                 ? 
                                 
                                 (
-                                    <button className="px-3 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-xs md:text-xs lg:text-sm text-white font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:scale-105 transition-all duration-300"
+                                    <button className="px-4 py-2 md:px-3 md:py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-xs md:text-xs lg:text-sm text-white font-semibold rounded-lg md:rounded-xl hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:scale-105 transition-all duration-300"
                                         onClick={
                                             () => handlePlus(item, data.id, data.date, data.name, data.image[0].img , data.promo_code ,"package")}
                                     >
-                                        Select Package
+                                        {window.innerWidth < 768 ? 'Select' : 'Select Package'} 
                                     </button>
                                 )
                                 : 
                                 (
                                     <div className="flex items-center gap-2 md:gap-4">
-                                        <button className="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 border border-red-200 text-red-600 text-xl font-semibold hover:bg-red-200 transition" 
+                                        <button className="flex items-center justify-center w-5 h-5 md:w-9 md:h-9 rounded-full bg-red-100 border border-red-200 text-red-600 text-sm md:text-xl font-semibold hover:bg-red-200 transition" 
                                             onClick={() => handleMinus(
                                                 item,        // rate info dari map
                                                 data.id,    // data package id
@@ -187,7 +187,7 @@ export default function FilterPackage({data, cart, dateStr , handlePlus, handleM
                                             } min ={0} readOnly />
                                         </div>
 
-                                        <button className="flex items-center justify-center w-9 h-9 rounded-full bg-green-100 border border-green-200 text-green-600 text-xl font-semibold hover:bg-green-200 transition"
+                                        <button className="flex items-center justify-center w-5 h-5 md:w-9 md:h-9 rounded-full bg-green-100 border border-green-200 text-green-600 text-sm md:text-xl font-semibold hover:bg-green-200 transition"
                                             onClick={() => handlePlus(item, data.id, data.date, data.name, data.image[0].img, data.promo_code,"package")}
 
                                         >

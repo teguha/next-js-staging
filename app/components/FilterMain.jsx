@@ -37,7 +37,7 @@ export default  function FilterMain() {
 
     const formatDateStringMobile = (date) => {
         const day = new Intl.DateTimeFormat("en-US", { day: "2-digit" }).format(date);
-        const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(date);
+        const month = new Intl.DateTimeFormat("en-US", { month: "short" }).format(date);
         const year = new Intl.DateTimeFormat("en-US", { year: "numeric" }).format(date);
 
         return `${day}, ${month} ${year}`;
@@ -111,7 +111,7 @@ export default  function FilterMain() {
                                         type="text" 
                                         id="promo" 
                                         onChange={(e) => setPromo(e.target.value)}
-                                        placeholder="Promotion Code (Optional)" 
+                                        placeholder="Promotion Code " 
                                         className="w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-600"
                                     />
                                 </div>
@@ -167,8 +167,8 @@ export default  function FilterMain() {
                                     <input 
                                         type="text" 
                                         id="promo" 
-                                        placeholder="Promotion Code (Optional)" 
-                                        className="w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-600 text-sm"
+                                        placeholder="Promotion Code" 
+                                        className="w-full px-2 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-600 text-xs"
                                     />
                                 </div>
                             </div>
