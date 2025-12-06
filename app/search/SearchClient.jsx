@@ -436,6 +436,7 @@ export default function SearchClient(){
             )
         }
 
+
         <section className="relative bg-gray-50 mb-18 md:mb-0">
             <div className ="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-50 py-4 container mx-auto">
                 {
