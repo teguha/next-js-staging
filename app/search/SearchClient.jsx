@@ -266,7 +266,12 @@ export default function SearchClient(){
     const [showCartPanel, setShowCartPanel] = useState(false);
     const [paymentPage , setPaymentPage] = useState(false);
     const handleGoToPayment = () => {
+
         paymentPage == true ? handleSubmitFormUser() : setPaymentPage(true);
+    };
+
+    const handleBackToSearch = () => {
+        setPaymentPage(false);
     };
 
     useEffect(() => {
@@ -365,13 +370,13 @@ export default function SearchClient(){
             if(!existing) return prev;
 
             const newQty = Math.max(existing.qty - 1, 0);
-            if(dataFrom === "cart"){
-                if(newQty === 0 ){
-                    // jika datanya dikurang sampe habis maka jadikan min = 1
-                    newQty == 1;
-                    return prev.map(c => c.id === packageId && c.rateId === rateId && c.rateDate === packageDate ? {...c, qty: 1} : c);
-                }
-            }
+            // if(dataFrom === "cart"){
+            //     if(newQty === 0 ){
+            //         // jika datanya dikurang sampe habis maka jadikan min = 1
+            //         newQty == 1;
+            //         return prev.map(c => c.id === packageId && c.rateId === rateId && c.rateDate === packageDate ? {...c, qty: 1} : c);
+            //     }
+            // }
 
             if(newQty === 0){
                 return prev.filter(c => !(c.id === packageId && c.rateId === rateId && c.rateDate === packageDate ));
@@ -412,7 +417,6 @@ export default function SearchClient(){
     // form user
 
 
-
     return(
         <>
 
@@ -439,7 +443,7 @@ export default function SearchClient(){
                             <section className="fixed top-0 w-full z-10 md:relative z-20 border-b border-gray-200 bg-white py-4 shadow-2xl sm:border-none sm:bg-transparent sm:py-0 sm:shadow-none block md:hidden">
                                 <div className="block md:hidden flex flex-row justify-between mx-auto px-4 mb-2">
                                     <div className="flex flex-row justify-start">
-                                        <FaChevronLeft className="text-gray-900 text-xl mt-1 mr-2" />
+                                        <FaChevronLeft className="text-gray-900 text-xl mt-1 mr-2" onClick={handleBackToSearch} />
                                         <p className="text-gray-900 font-bold text-xl">Watersport Bali</p>
                                     </div>
                                     <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300 text-white">
@@ -576,6 +580,7 @@ export default function SearchClient(){
                     ) : 
                     (
                         <>
+                            {/* form user */}
                             <div className="col-span-1 md:col-span-2 lg:col-span-2 mb-10 mt-10">
                                 <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl p-8">
                                     <div className="mb-8">
@@ -673,8 +678,9 @@ export default function SearchClient(){
                                         {/* Submit Button */}
                                         <div className="flex justify-end block md:hidden">
                                             <button
+                                            disabled ={cart.length === 0 ? true : false}
                                             onClick={handleSubmitFormUser}
-                                            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                                            className={`${cart.length === 0 ? `bg-gray-600 hover:bg-gray-700` : `bg-blue-600 hover:bg-blue-700`} px-8 py-3 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105`}
                                             >
                                             Submit
                                             </button>
@@ -682,6 +688,7 @@ export default function SearchClient(){
                                     </div>
                                 </div>
                             </div>
+                            {/* form user */}
                         </>
                     )
                 }
